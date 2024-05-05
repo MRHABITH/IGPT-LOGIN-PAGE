@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Streamlit Square Layout</title>
+    <!-- Add Firebase App (the core Firebase SDK) and Firebase Auth (optional if using Firebase Auth) scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-auth.js"></script>
+    <script src="main.js" defer type="module"></script>
+    <link rel="stylesheet" type="text/css" href="design.css" />
+  </head>
+  <body>
+    <div class="square">
+      <img src="logo-black.jpg" class="image" />
+      <div class="text">
+        <p><strong>Sign in With Igpt</strong></p>
+      </div>
+      <div class="input-group">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username"
+        />
+        <div class="password-group">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+          <button
+            type="button"
+            class="show-password"
+            onclick="togglePassword()"
+          >
+            Show Password
+          </button>
+        </div>
+        <button type="submit" class="login-button">Login</button>
+        <p class="auth-options">Or sign in with:</p>
+        <div class="auth-buttons">
+          <button id="google-btn" class="auth-button google">Google</button>
+          <button id="microsoft-btn" class="auth-button microsoft">
+            Microsoft
+          </button>
+          <button id="github-btn" class="auth-button github">GitHub</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

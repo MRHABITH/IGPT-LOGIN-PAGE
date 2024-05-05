@@ -1,0 +1,126 @@
+/* design.css */
+
+body {
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.square {
+  width: 500px;
+  height: 400px;
+  background-color: white; /* White background color */
+  border: 2px solid white; /* White border */
+  position: relative;
+  margin: 85px;
+  border-radius: 20px; /* Adjust the border radius to control the rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add a black shadow effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.image {
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-top: -200px; /* Move the image slightly upward */
+}
+
+.text {
+  margin-top: -50px; /* Add spacing between form group and text */
+  margin-left: 10px; /* Move the text slightly to the right */
+  color: rgb(16, 15, 15); /* Change text color to red */
+  font-family: "Helvetica Neue", sans-serif; /* Set font style to Helvetica Neue */
+  font-size: 20px; /* Set font size to 20 pixels */
+}
+
+.input-group {
+  margin-top: 10px; /* Add spacing between text and input field */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="password"]::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+button {
+  padding: 8px 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #18191c; /* Blue color for login button */
+  color: white;
+}
+
+.auth-options {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.auth-button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.google {
+  background-color: #171515; /* Google red color */
+  color: white;
+  margin-left: -1px;
+}
+
+.microsoft {
+  background-color: #141516; /* Microsoft blue color */
+  color: white;
+}
+
+.github {
+  background-color: #1a1818; /* GitHub black color */
+  color: white;
+}
+
+.password-group {
+  position: relative;
+  width: 100%;
+}
+
+.show-password {
+  position: absolute;
+  right: -20px;
+  top: 80%;
+  transform: translateY(-150%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #1b1c1e; /* Blue color for the button */
+}
